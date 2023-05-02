@@ -1,0 +1,27 @@
+﻿<Window x:Class="_nyame.MainWindow"
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_nyame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="200">
+    <Grid Background="SeaShell">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="4"/>
+            <RowDefinition/>
+            <RowDefinition Height="4"/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="user_name" Grid.Column="1"  Grid.Row="2" materialDesign:HintAssist.Hint="Name User"/>
+        <Button x:Name="autorization" Grid.Column="1" Content="Войти" Grid.Row="4" Click="autorization_Click"/>
+    </Grid>
+</Window>

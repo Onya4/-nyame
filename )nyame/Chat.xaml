@@ -1,0 +1,38 @@
+﻿<Window x:Class="_nyame.Chat"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_nyame"
+        mc:Ignorable="d"
+        Title="Chat" Height="450" Width="800">
+
+    <Grid Background="SeaShell">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="4"/>
+            <ColumnDefinition Width="192"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="192"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="4"/>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="4"/>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="autorization" Grid.Column="1" Content="Войти" Grid.Row="1" Click="autorization_Click" />
+        <Button x:Name="new_chat" Grid.Column="1" Content="Создать" Grid.Row="2" Click="new_chat_Click"/>
+        <Button x:Name="logy" Grid.Column="3" Grid.ColumnSpan="3" Content="Посмотреть логи" Grid.Row="2"/>
+        <Frame x:Name="buddy" Grid.Column="1" Grid.Row="4" Grid.RowSpan="3"/>
+        <Frame x:Name="chatik" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+        <TextBlock Grid.Column="4" Grid.Row="1" Text="OnyAme" TextAlignment="Center" FontSize="40"/>
+    </Grid>
+</Window>
